@@ -1,0 +1,18 @@
+div{margin-top: 15px;text-align: center;height: 700px}
+input[type="button"]{margin-top: 10%;background-color: transparent;color: #fff;padding: 10px 80px;border-radius: 10px;border: 2px solid  #660066}
+input[type="button"]:hover{background-color: #660066}
+#heading{background-color: #FF9900;}
+#heading h1{font-size: 500%;color: #fff;margin-top: 20%}
+#form1{background-color: #CC6600;}
+#form1 form{}
+#form1 form input{width: 49.6%;padding: 5px}
+#form1 fieldset {margin-top: 10%;color: #fff}
+#form2{background-color: #CC5200}
+legend{margin-top: 8%}
+#form2 input[type="text"]{width: 49%;margin-top: 2%;padding: 5px}
+#form3{background-color: #CC0066}
+#form3 input[type="file"]{left: 10%;position: relative;}
+#form3 label{margin-left: 20%}
+#form4{background-color: #FF3300;}
+#form4 textarea{padding: 5px;width: 90%;}
+#form4 input[type="checkbox"]{margin-top: 30%}

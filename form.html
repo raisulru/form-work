@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container" id="heading">
+        <h1>Fill Up The Form</h1>
+        <p>
+            <mark>fill up step by step and click button for next page</mark>
+        </p>
+        <a href="#form1">
+            <input type="button" value="Next page">
+        </a>
+    </div>
+    <div class="container" id="form1">
+        <form action="action_page.html">
+            <legend>Your Name And Email</legend>
+            <input type="text" value="Your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name';}" />
+            <input type="text" value="Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}" />
+            
+        </form>
+        <fieldset>
+            <legend>Gender</legend>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Other
+            </label>
+        </fieldset>
+        <a href="#form2">
+            <input type="button" value="Next page">
+        </a>
+    </div>
+    <div class="container" id="form2">
+        <form action="">
+            <legend>Your Adress</legend>
+            <input type="text" value="Village" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Village';}" />
+            <input type="text" value="Post" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Post';}" />
+            <input type="text" value="Thana" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Thana';}" />
+            <input type="text" value="District" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'District';}" />
+            <legend>Your Birthday</legend>
+            Enter a date after 1980 and before 2000
+            <br>
+            <br>
+            <input type="date" max="1980-01-01" min="1999-12-31" required>
+        </form>
+        <a href="#form3">
+            <input type="button" value="Next page">
+        </a>
+    </div>
+    <div class="container" id="form3">
+        <form action="">
+            <legend>Select Religion</legend>
+            <select>
+                <option selected="selected" value="">Select</option>
+                <option value="Islam">Islam</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddist">Buddist</option>
+                <option value="Cristia">Cristia</option>
+                <option value="Other">Other</option>
+            </select>
+            If other please write:
+            <input type="text">
+            <legend>Choose a photos of you:</legend>
+            <input type="file" required> 
+            <label for="">
+            Select your favouret color:
+            <input type="color" value="#660033">
+            </label>
+            <legend>put your phone number:</legend>
+             <input type="tel" value="+8801xxxxxxxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '+8801xxxxxxxxx';}" required/>
+        </form>
+        <a href="#form4">
+            <input type="button" value="Next page">
+        </a>
+    </div>
+    <div class="container" id="form4">
+        <form action="">
+           <legend>Security password</legend>
+            <label for="password">
+                <input type="password" value="01723Ra/" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '01723Ra/';}" />
+            </label>
+            <legend>Your Discription</legend>
+             <textarea value="Your Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Message';}">Your Message</textarea>
+             <label for="check">
+             <input type="checkbox" id="check"> I fill correct information
+             </label>
+        </form>
+        <a href="#">
+            <input type="button" onclick="alert('You succesfully submited')"  value="Submit">
+            
+        </a>
+    </div>
+   
+</body>
+
+</html>
